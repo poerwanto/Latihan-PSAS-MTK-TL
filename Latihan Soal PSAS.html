@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soal PSAS Matematika Tingkat Lanjut Kelas XI — Tipe B</title>
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]'], ['$$', '$$']],
+    packages: {'[+]': ['ams']}
+  },
+  options: {
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+  :root {
+    --primary: #1e3a8a;
+    --primary-light: #eff6ff;
+    --accent: #0f766e;
+    --border: #cbd5e1;
+    --text: #1e293b;
+    --muted: #64748b;
+    --bg: #f8fafc;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 980px;
+    margin: 24px auto;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+  }
+  header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
+    color: #ffffff;
+    padding: 24px 32px;
+  }
+  header h1 {
+    margin: 0 0 6px 0;
+    font-size: 1.42rem;
+    letter-spacing: 0.2px;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.92;
+    font-size: 0.94rem;
+  }
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 14px 32px;
+    background: #f1f5f9;
+    border-bottom: 1px solid var(--border);
+  }
+  .action-btn {
+    padding: 8px 14px;
+    border: 1px solid var(--accent);
+    background: #ffffff;
+    color: var(--accent);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all 0.18s ease;
+  }
+  .action-btn:hover {
+    background: var(--accent);
+    color: #ffffff;
+  }
+  .content {
+    padding: 28px 32px;
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 10px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .section-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--primary);
+  }
+  .part-banner {
+    background: var(--primary-light);
+    border-left: 5px solid var(--primary);
+    padding: 10px 16px;
+    margin: 28px 0 16px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .part-banner:first-child {
+    margin-top: 0;
+  }
+  .part-banner h3 {
+    margin: 0 0 2px 0;
+    font-size: 1.08rem;
+    color: var(--primary);
+  }
+  .part-banner p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--muted);
+  }
+  .badge {
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.84rem;
+    font-weight: 700;
+  }
+  .question-card {
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #ffffff;
+    page-break-inside: avoid;
+  }
+  .q-title {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .q-num {
+    min-width: 28px;
+    height: 28px;
+    background: var(--primary);
+    color: #ffffff;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.88rem;
+    margin-top: 2px;
+  }
+  .q-text {
+    flex: 1;
+    font-size: 1rem;
+  }
+  .topic-tag {
+    display: inline-block;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #e2e8f0;
+    color: #334155;
+    margin-bottom: 4px;
+  }
+  .data-table {
+    width: 100%;
+    max-width: 520px;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 0.94rem;
+  }
+  .data-table th, .data-table td {
+    border: 1px solid #94a3b8;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  .data-table th {
+    background: #e2e8f0;
+    font-weight: 700;
+  }
+  .options-list {
+    list-style: none;
+    padding-left: 38px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 8px 18px;
+  }
+  .options-list.vertical {
+    grid-template-columns: 1fr;
+  }
+  .option-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+  .opt-letter {
+    font-weight: 700;
+    color: var(--primary);
+    min-width: 22px;
+  }
+  .tf-options {
+    display: flex;
+    gap: 24px;
+    padding-left: 38px;
+    margin-top: 6px;
+  }
+  .tf-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-weight: 600;
+    background: #f8fafc;
+  }
+  .cb-list {
+    list-style: none;
+    padding-left: 38px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .cb-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 6px 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background: #f8fafc;
+  }
+  .cb-square {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    margin-top: 3px;
+    background: #ffffff;
+  }
+  .match-table {
+    width: calc(100% - 38px);
+    margin-left: 38px;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  .match-table th, .match-table td {
+    border: 1px solid #94a3b8;
+    padding: 8px 12px;
+    vertical-align: middle;
+  }
+  .match-table th {
+    background: #e2e8f0;
+    color: #1e293b;
+    text-align: center;
+  }
+  .match-ans-slot {
+    text-align: center;
+    font-weight: 700;
+    color: var(--muted);
+    width: 90px;
+  }
+  @media print {
+    body { background: #ffffff; }
+    .container { box-shadow: none; border: none; margin: 0; max-width: 100%; }
+    .toolbar { display: none; }
+    header { background: #1e3a8a !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .content { padding: 12px 0; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Penilaian Sumatif Akhir Semester (PSAS) — Matematika Tingkat Lanjut Kelas XI</h1>
+    <p>Paket Soal Tipe B • Pilihan Ganda (24), Benar/Salah (10), Checkbox (3), dan Menjodohkan (3)</p>
+  </header>
+
+  <div class="toolbar">
+    <button class="action-btn" onclick="window.print()">Cetak / Simpan PDF</button>
+  </div>
+
+  <div class="content">
+    <div id="tipeB">
+      <div class="section-header">
+        <h2>SOAL PSAS MATEMATIKA TINGKAT LANJUT — TIPE B</h2>
+        <span class="badge">Total 40 Butir Soal</span>
+      </div>
+      <div id="body-tipeB"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const letters = ['A', 'B', 'C', 'D', 'E'];
+
+const dataTipeB = {
+  // I. PILIHAN GANDA (30 Soal: 8 Polinomial, 11 Matriks, 11 Transformasi Geometri)
+  pg: [
+    {
+      no: 1, topik: "Polinomial",
+      q: "Hasil dari penjumlahan suku banyak \\(f(x) = 4x^4 - 3x^3 - 5x^2 + 4\\) dan \\(g(x) = 5x^3 + 5x^2 - 2x - 7\\) adalah ….",
+      opts: [
+        "\\(4x^4 + 2x^3 - 2x - 3\\)",
+        "\\(4x^4 + 2x^3 + 2x - 3\\)",
+        "\\(4x^4 - 2x^3 - 2x + 3\\)",
+        "\\(4x^4 + 8x^3 - 2x - 3\\)",
+        "\\(4x^4 + 2x^3 - 2x + 3\\)"
+      ]
+    },
+    {
+      no: 2, topik: "Polinomial",
+      q: "Hasil bagi dari \\(x^3 - 4x^2 + 2x + 7\\) dibagi oleh \\((x - 1)\\) adalah ….",
+      opts: [
+        "\\(x^2 + 3x - 1\\)",
+        "\\(x^2 - 3x - 1\\)",
+        "\\(x^2 - 3x + 1\\)",
+        "\\(-x^2 + 3x - 1\\)",
+        "\\(x^2 - 5x + 7\\)"
+      ]
+    },
+    {
+      no: 3, topik: "Polinomial",
+      q: "Sisa dari suku banyak \\(f(x) = 9x^3 - 6x^2 + 3x + 7\\) dibagi oleh \\((3x + 1)\\) adalah ….",
+      opts: ["-5", "4", "5", "-4", "6"]
+    },
+    {
+      no: 4, topik: "Polinomial",
+      q: "Sisa pembagian \\(P(x) = 4x^3 - 3x + 5\\) dibagi oleh \\((x^2 - x - 2)\\) adalah ….",
+      opts: [
+        "\\(9x - 13\\)",
+        "\\(-9x + 13\\)",
+        "\\(13x + 9\\)",
+        "\\(9x + 13\\)",
+        "\\(-9x - 13\\)"
+      ]
+    },
+    {
+      no: 5, topik: "Polinomial",
+      q: "Sisa dari suku banyak \\(f(x) = x^5 - 2x + 9\\) dibagi oleh \\((x^2 + x - 2)\\) adalah \\(ax + b\\). Nilai dari \\(a + b\\) adalah ….",
+      opts: ["6", "7", "8", "9", "10"]
+    },
+    {
+      no: 6, topik: "Polinomial",
+      q: "Sebuah pabrik biskuit memiliki persediaan gula halus yang memenuhi persamaan \\(f(x) = 2x^5 + 3x^4 - 2x^3 - 4x + 7\\). Bahan baku untuk memproduksi satu kaleng biskuit memenuhi persamaan \\((x - 2)\\). Sisa dari persediaan gula setelah diproduksi adalah ….",
+      opts: ["91", "93", "95", "97", "99"]
+    },
+    {
+      no: 7, topik: "Polinomial",
+      q: "Pabrik sari buah memiliki 3 ukuran peti yang digunakan untuk mengemas produknya. Peti pertama berukuran kecil, peti kedua berukuran sedang yang dapat diisi 2 kali peti ukuran kecil, dan peti ketiga berukuran besar yang dapat diisi 3 kali peti ukuran kecil. Jika terdapat 5 tumpukan peti kecil, 2 tumpukan peti sedang, dan 3 tumpukan peti besar, rumus persamaan polinomial yang dapat menggambarkan jumlah minuman kemasan tersebut adalah ….",
+      opts: [
+        "\\(x^5 + 9x^3 + 4x^2\\)",
+        "\\(x^5 + 27x^3 + 4x^2\\)",
+        "\\(x^5 + 27x^3 + 2x^2\\)",
+        "\\(x^5 + 9x^3 + 2x^2\\)",
+        "\\(x^5 + 27x^3 + 9x^2\\)"
+      ]
+    },
+    {
+      no: 8, topik: "Matriks",
+      q: "Diketahui matriks \\(A = \\begin{pmatrix} 1 & -3 \\\\ 5 & 2 \\\\ -2 & 4 \\end{pmatrix}\\) dan matriks \\(B = \\begin{pmatrix} 4 & 2 & -3 \\\\ -1 & -4 & 3 \\end{pmatrix}\\). Hasil dari \\(A + B^t = \\dots\\)",
+      opts: [
+        "\\(\\begin{pmatrix} 5 & 4 \\\\ 7 & -2 \\\\ -5 & 7 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 5 & -4 \\\\ 7 & -2 \\\\ -5 & -7 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 5 & -4 \\\\ 7 & -2 \\\\ -5 & 7 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 5 & -4 \\\\ -7 & -2 \\\\ -5 & 7 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 5 & -4 \\\\ 7 & 2 \\\\ -5 & 7 \\end{pmatrix}\\)"
+      ]
+    },
+    {
+      no: 9, topik: "Matriks",
+      q: "Diketahui matriks \\(A = \\begin{pmatrix} 3 & 7 \\\\ -4 & 5 \\\\ -2 & 2 \\end{pmatrix}\\) dan matriks \\(B = \\begin{pmatrix} -5 & 3 \\\\ -6 & -1 \\\\ 3 & 6 \\end{pmatrix}\\). Hasil dari \\(A - B = \\dots\\)",
+      opts: [
+        "\\(\\begin{pmatrix} 8 & 4 \\\\ -10 & 6 \\\\ -5 & -4 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 8 & 4 \\\\ 2 & 6 \\\\ -5 & -4 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} -2 & 4 \\\\ 2 & 4 \\\\ -5 & -4 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 8 & 4 \\\\ 2 & 4 \\\\ -5 & -4 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 8 & 4 \\\\ 2 & 6 \\\\ 1 & -4 \\end{pmatrix}\\)"
+      ]
+    },
+    {
+      no: 10, topik: "Matriks",
+      q: "Hasil dari perkalian matriks \\(\\begin{pmatrix} 3 & -2 \\\\ -1 & 4 \\end{pmatrix} \\begin{pmatrix} -2 \\\\ 5 \\end{pmatrix}\\) adalah ….",
+      opts: [
+        "\\(\\begin{pmatrix} 4 \\\\ 22 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} -16 \\\\ 18 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} -16 \\\\ 22 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} -16 & 22 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 16 \\\\ -22 \\end{pmatrix}\\)"
+      ]
+    },
+    {
+      no: 11, topik: "Matriks",
+      q: "Diketahui kesamaan matriks \\(\\begin{pmatrix} 4a - 1 \\\\ -a + b \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ -3 \\end{pmatrix}\\). Nilai \\(2b - a\\) adalah ….",
+      opts: ["-3", "-5", "0", "3", "5"]
+    },
+    {
+      no: 12, topik: "Matriks",
+      q: "Nilai determinan dari matriks \\(A = \\begin{pmatrix} 2 & 1 & -1 \\\\ 0 & 3 & 2 \\\\ 4 & -1 & 1 \\end{pmatrix}\\) adalah ….",
+      opts: ["20", "25", "30", "35", "40"]
+    },
+    {
+      no: 13, topik: "Matriks",
+      q: "Invers dari matriks \\(A = \\begin{pmatrix} 3 & -5 \\\\ 2 & -4 \\end{pmatrix}\\) adalah ….",
+      opts: [
+        "\\(-\\frac{1}{2} \\begin{pmatrix} -4 & 5 \\\\ 2 & 3 \\end{pmatrix}\\)",
+        "\\(-\\frac{1}{2} \\begin{pmatrix} 4 & -5 \\\\ 2 & -3 \\end{pmatrix}\\)",
+        "\\(-\\frac{1}{2} \\begin{pmatrix} -4 & 5 \\\\ -2 & 3 \\end{pmatrix}\\)",
+        "\\(-\\frac{1}{2} \\begin{pmatrix} 4 & 5 \\\\ -2 & 3 \\end{pmatrix}\\)",
+        "\\(-\\frac{1}{2} \\begin{pmatrix} -4 & -5 \\\\ 2 & 3 \\end{pmatrix}\\)"
+      ]
+    },
+    {
+      no: 14, topik: "Matriks",
+      q: "Diketahui matriks \\(A = \\begin{pmatrix} 3 & 2 \\\\ 4 & 3 \\end{pmatrix}\\) dan \\(B = \\begin{pmatrix} 5 & 4 \\\\ 7 & 5 \\end{pmatrix}\\). Matriks \\(X\\) yang memenuhi \\(AX = B\\) adalah ….",
+      opts: [
+        "\\(\\begin{pmatrix} 1 & -2 \\\\ 1 & 1 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 1 & 2 \\\\ 1 & -1 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} -1 & 2 \\\\ -1 & 1 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 2 & 1 \\\\ -1 & 1 \\end{pmatrix}\\)",
+        "\\(\\begin{pmatrix} 1 & 2 \\\\ -1 & 1 \\end{pmatrix}\\)"
+      ]
+    },
+    {
+      no: 15, topik: "Matriks",
+      q: "Sebuah perusahaan yang bergerak di bidang manufaktur memiliki proyek pekerjaan di tiga wilayah berbeda yaitu Kota Bekasi, Kota Bogor, dan Kota Semarang. Berikut disajikan data banyaknya karyawan pada perusahaan di tiga lokasi tersebut:<table class='data-table'><tr><th>Lokasi</th><th>Karyawan Tetap</th><th>Karyawan Paruh Waktu</th></tr><tr><td>Bekasi</td><td>130</td><td>90</td></tr><tr><td>Bogor</td><td>110</td><td>60</td></tr><tr><td>Semarang</td><td>70</td><td>40</td></tr></table>Jika perusahaan tersebut menggaji karyawannya sebesar Rp140.000 per hari untuk karyawan tetap dan Rp90.000 per hari untuk karyawan paruh waktu, maka besar pengeluaran perusahaan tersebut untuk karyawannya yang ada di Semarang adalah ….",
+      opts: [
+        "Rp12.200.000",
+        "Rp12.800.000",
+        "Rp13.400.000",
+        "Rp14.000.000",
+        "Rp14.600.000"
+      ]
+    },
+    {
+      no: 16, topik: "Transformasi Geometri",
+      q: "Sebuah peta harta karun menunjukkan bahwa harta karun tersembunyi di titik koordinat \\((6, 3)\\). Namun, karena peta tersebut sudah usang, koordinat sebenarnya mengalami pergeseran sebesar 4 satuan ke kiri dan 2 satuan ke atas. Koordinat sebenarnya harta karun tersebut adalah ….",
+      opts: ["\\((2, 5)\\)", "\\((10, 5)\\)", "\\((2, 1)\\)", "\\((10, 1)\\)", "\\((5, 2)\\)"]
+    },
+    {
+      no: 17, topik: "Transformasi Geometri",
+      q: "Di sebuah sekolah, terdapat taman literasi yang dikelilingi oleh beberapa prasasti tokoh pendidikan di titik-titik berikut:<ul><li>Prasasti Ki Hajar Dewantara berada di titik \\((4, 6)\\)</li><li>Prasasti R.A. Kartini berada di titik \\((7, 2)\\)</li><li>Prasasti Dewi Sartika berada di titik \\((2, 5)\\)</li><li>Prasasti Mohammad Hatta berada di titik \\((5, 8)\\)</li></ul>Sekolah tersebut merencanakan penataan taman dan memindahkan semua prasasti dengan vektor translasi \\(\\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}\\). Koordinat bayangan Prasasti Dewi Sartika adalah ….",
+      opts: ["\\((-1, 7)\\)", "\\((5, 7)\\)", "\\((5, 3)\\)", "\\((-1, 3)\\)", "\\((3, 5)\\)"]
+    },
+    {
+      no: 18, topik: "Transformasi Geometri",
+      q: "Diketahui \\(A'(-2, 5)\\) adalah bayangan titik \\(A\\) yang dicerminkan terhadap garis \\(y = -x\\). Bayangan titik \\(A\\) jika dicerminkan terhadap garis \\(x = -1\\) adalah ….",
+      opts: ["\\(A''(3, 2)\\)", "\\(A''(-7, 2)\\)", "\\(A''(3, -4)\\)", "\\(A''(-3, 2)\\)", "\\(A''(7, 2)\\)"]
+    },
+    {
+      no: 19, topik: "Transformasi Geometri",
+      q: "Diketahui titik \\(A'(6, -4)\\) adalah bayangan titik \\(A\\) yang dirotasi terhadap titik \\((1, -1)\\) sejauh \\(180^\\circ\\) searah jarum jam. Koordinat titik \\(A\\) tersebut adalah ….",
+      opts: ["\\(A(4, -2)\\)", "\\(A(-4, 2)\\)", "\\(A(-4, -2)\\)", "\\(A(4, 2)\\)", "\\(A(8, -6)\\)"]
+    },
+    {
+      no: 20, topik: "Transformasi Geometri",
+      q: "Bayangan titik \\(A(-8, 12)\\) yang didilatasi dengan pusat \\((0, 0)\\) dan faktor skala \\(\\frac{1}{4}\\) adalah \\((a, b)\\). Nilai \\(a + b = \\dots\\)",
+      opts: ["-1", "0", "1", "2", "5"]
+    },
+    {
+      no: 21, topik: "Transformasi Geometri",
+      q: "Sebuah titik \\(A(1, -4)\\) didilatasi terhadap pusat \\((-1, 2)\\) dan faktor skala \\(2\\), lalu dilanjutkan dengan pencerminan terhadap sumbu \\(y\\). Bayangan akhir titik \\(A\\) adalah ….",
+      opts: ["\\(A''(-3, -10)\\)", "\\(A''(3, -10)\\)", "\\(A''(-3, 10)\\)", "\\(A''(3, 10)\\)", "\\(A''(-10, -3)\\)"]
+    },
+    {
+      no: 22, topik: "Transformasi Geometri",
+      q: "Bu Sari sedang membuat pola keramik di atas kertas milimeter blok. Ia menggambar sebuah motif berbentuk segitiga dengan titik sudut di koordinat \\(A(2, 1)\\), \\(B(5, 2)\\), dan \\(C(3, 4)\\). Agar motif terlihat lebih besar dalam desain, Bu Sari menerapkan dilatasi dengan pusat di \\((0, 0)\\) dan faktor skala \\(k = 3\\). Koordinat bayangan segitiga tersebut adalah ….",
+      opts: [
+        "\\(A'(-6, -3),\\; B'(-15, -6),\\; C'(-9, -12)\\)",
+        "\\(A'(6, 3),\\; B'(15, 6),\\; C'(9, 12)\\)",
+        "\\(A'(3, 6),\\; B'(6, 15),\\; C'(12, 9)\\)",
+        "\\(A'(6, -3),\\; B'(15, -6),\\; C'(9, -12)\\)",
+        "\\(A'(-6, 3),\\; B'(-15, 6),\\; C'(-9, 12)\\)"
+      ]
+    },
+    {
+      no: 23, topik: "Transformasi Geometri",
+      q: "Diketahui sebuah garis \\(x - y = 5\\). Garis tersebut ditranslasi oleh \\(T\\begin{pmatrix} 2 \\\\ 6 \\end{pmatrix}\\), bayangan garis tersebut adalah ….",
+      opts: ["\\(x - y = 1\\)", "\\(x - y = -1\\)", "\\(x + y = 1\\)", "\\(x - y = 9\\)", "\\(x + y = 9\\)"]
+    },
+    {
+      no: 24, topik: "Transformasi Geometri",
+      q: "Diketahui sebuah garis \\(x + 2y - 7 = 0\\) dicerminkan terhadap garis \\(y = -x\\), lalu dilanjutkan dengan translasi oleh \\(T\\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix}\\). Bayangan akhir garis tersebut adalah ….",
+      opts: [
+        "\\(2x - y + 6 = 0\\)",
+        "\\(2x + y - 6 = 0\\)",
+        "\\(2x + y + 6 = 0\\)",
+        "\\(-2x + y + 6 = 0\\)",
+        "\\(x + 2y + 6 = 0\\)"
+      ]
+    }
+  ],
+
+  // II. BENAR / SALAH (10 Soal: 2 Polinomial, 4 Matriks, 4 Transformasi Geometri)
+  tf: [
+    // 2 Polinomial (31 - 32)
+    {
+      no: 25, topik: "Polinomial",
+      q: "Suku banyak \\(f(x) = 2x^3 + 3x^2 - ax - 5\\) dan \\(g(x) = 3x^2 - 4x - 6\\) mempunyai sisa yang sama jika dibagi oleh \\((x + 1)\\) apabila nilai \\(a = 5\\)."
+    },
+    {
+      no: 26, topik: "Polinomial",
+      q: "Jika \\((x + 2)\\) merupakan faktor dari suku banyak \\(f(x) = x^3 + 4x^2 + px - 2\\), maka nilai \\(p\\) yang memenuhi adalah \\(-3\\)."
+    },
+    // 4 Matriks (33 - 36)
+    {
+      no: 27, topik: "Matriks",
+      q: "Diketahui matriks \\(A = \\begin{pmatrix} a & 6 \\\\ 1 & b \\end{pmatrix}\\) dan \\(B = \\begin{pmatrix} 4 & 6 \\\\ 1 & 2a - 3 \\end{pmatrix}\\). Jika \\(A = B\\), maka nilai \\(a + b = 9\\)."
+    },
+    {
+      no: 28, topik: "Matriks",
+      q: "Diketahui matriks \\(A = \\begin{pmatrix} 4 & 5 \\\\ 3 & 4 \\end{pmatrix}\\) dan \\(B = \\begin{pmatrix} 5 & 2 \\\\ 1 & 1 \\end{pmatrix}\\). Nilai determinan dari hasil kali matriks \\((AB)\\) adalah \\(6\\)."
+    },
+    {
+      no: 29, topik: "Matriks",
+      q: "Nilai \\(x\\) yang memenuhi persamaan determinan matriks \\(\\begin{vmatrix} x & -3 \\\\ 4 & 2 \\end{vmatrix} = 18\\) adalah \\(x = 3\\)."
+    },
+    {
+      no: 30, topik: "Matriks",
+      q: "Diketahui matriks \\(A = \\begin{pmatrix} 2 & 1 \\\\ -1 & 3 \\end{pmatrix}\\) dan \\(B = \\begin{pmatrix} 0 & 3 \\\\ 1 & 2 \\end{pmatrix}\\). Jika \\(C = A - B\\), maka matriks \\(C^{-1} = \\begin{pmatrix} \\frac{1}{2} & 1 \\\\ -1 & 1 \\end{pmatrix}\\)."
+    },
+    // 4 Transformasi Geometri (37 - 40)
+    {
+      no: 31, topik: "Transformasi Geometri",
+      q: "Nadia tinggal di rumah dengan koordinat \\((2, 7)\\) dan pindah ke rumah baru yang terletak 5 satuan ke kanan dan 4 satuan ke bawah. Koordinat rumah Nadia yang baru adalah \\((7, 3)\\)."
+    },
+    {
+      no: 32, topik: "Transformasi Geometri",
+      q: "Bayangan titik \\(A(-4, 7)\\) yang direfleksikan terhadap garis \\(y = 2\\) adalah \\(A'(-4, 11)\\)."
+    },
+    {
+      no: 33, topik: "Transformasi Geometri",
+      q: "Diketahui titik \\(A(6, -9)\\) didilatasi terhadap titik pusat \\((0, 0)\\) dengan faktor skala \\(\\frac{1}{3}\\). Bayangan titik \\(A\\) tersebut adalah \\(A'(2, -3)\\)."
+    },
+    {
+      no: 34, topik: "Transformasi Geometri",
+      q: "Bayangan sebuah garis \\(y = 4x - 9\\) yang dicerminkan terhadap sumbu \\(x\\) adalah \\(y = 4x + 9\\)."
+    }
+  ],
+
+  // III. PILIHAN GANDA KOMPLEKS / CHECKBOX (3 Soal: 1 Polinomial, 1 Matriks, 1 Transformasi Geometri)
+  cb: [
+    {
+      no: 35, topik: "Polinomial",
+      q: "Diketahui suku banyak \\(f(x) = x^3 - 2x^2 - 5x + 6\\). Berilah tanda centang (&#10003;) pada pernyataan-pernyataan berikut yang <strong>benar</strong> (jawaban benar lebih dari satu):",
+      opts: [
+        "\\(f(x)\\) merupakan polinomial berderajat 3 dengan konstanta \\(6\\).",
+        "\\((x + 1)\\) merupakan salah satu faktor dari \\(f(x)\\).",
+        "Sisa pembagian \\(f(x)\\) oleh \\((x - 2)\\) adalah \\(-4\\).",
+        "Hasil bagi \\(f(x)\\) oleh \\((x - 1)\\) adalah \\(x^2 - x - 6\\)."
+      ]
+    },
+    {
+      no: 36, topik: "Matriks",
+      q: "Diketahui matriks \\(A = \\begin{pmatrix} 4 & 3 \\\\ 5 & 4 \\end{pmatrix}\\) dan \\(B = \\begin{pmatrix} 2 & 1 \\\\ -1 & 3 \\end{pmatrix}\\). Berilah tanda centang (&#10003;) pada pernyataan-pernyataan berikut yang <strong>benar</strong> (jawaban benar lebih dari satu):",
+      opts: [
+        "Determinan matriks \\(A\\) adalah \\(1\\).",
+        "Hasil dari \\(A - B = \\begin{pmatrix} 2 & 2 \\\\ 6 & 1 \\end{pmatrix}\\).",
+        "Invers matriks \\(A\\) adalah \\(A^{-1} = \\begin{pmatrix} 4 & -3 \\\\ -5 & 4 \\end{pmatrix}\\).",
+        "Nilai determinan dari matriks \\((AB)\\) adalah \\(5\\)."
+      ]
+    },
+    {
+      no: 37, topik: "Transformasi Geometri",
+      q: "Diketahui titik \\(Q(-3, 6)\\) mengalami beberapa transformasi geometri. Berilah tanda centang (&#10003;) pada pernyataan-pernyataan berikut yang <strong>benar</strong> (jawaban benar lebih dari satu):",
+      opts: [
+        "Jika \\(Q\\) ditranslasi oleh \\(T\\begin{pmatrix} 4 \\\\ -2 \\end{pmatrix}\\), bayangannya adalah \\(Q'(1, 4)\\).",
+        "Jika \\(Q\\) dicerminkan terhadap sumbu \\(y\\), bayangannya adalah \\(Q'(-3, -6)\\).",
+        "Jika \\(Q\\) dirotasi sejauh \\(90^\\circ\\) berlawanan arah jarum jam dengan pusat \\((0, 0)\\), bayangannya adalah \\(Q'(-6, -3)\\).",
+        "Jika \\(Q\\) didilatasi dengan pusat \\((0, 0)\\) dan faktor skala \\(\\frac{1}{3}\\), bayangannya adalah \\(Q'(-1, 2)\\)."
+      ]
+    }
+  ],
+
+  // IV. MENJODOHKAN (3 Soal: 1 Polinomial, 1 Matriks, 1 Transformasi Geometri)
+  match: [
+    {
+      no: 38, topik: "Polinomial",
+      q: "Pasangkan setiap pernyataan polinomial pada kolom kiri dengan nilai yang tepat pada kolom kanan!",
+      left: [
+        "Derajat dari polinomial \\((3x^3 + 2)(x^3 - 5x + 1)\\)",
+        "Sisa pembagian \\(f(x) = 2x^3 - 3x^2 + 4x - 1\\) oleh \\((x - 1)\\)",
+        "Nilai \\(f(-1)\\) jika diketahui \\(f(x) = 3x^3 + 5x^2 - 2x + 1\\)",
+        "Nilai \\(k\\) agar \\((x - 2)\\) menjadi faktor dari \\(x^3 - 2x^2 + kx - 8\\)"
+      ],
+      right: [
+        { code: "A", val: "\\(2\\)" },
+        { code: "B", val: "\\(3\\)" },
+        { code: "C", val: "\\(4\\)" },
+        { code: "D", val: "\\(5\\)" },
+        { code: "E", val: "\\(6\\)" }
+      ]
+    },
+    {
+      no: 39, topik: "Matriks",
+      q: "Pasangkan setiap operasi matriks pada kolom kiri dengan hasil bilangan yang tepat pada kolom kanan!",
+      left: [
+        "Nilai determinan dari matriks \\(\\begin{pmatrix} 6 & 4 \\\\ 2 & 2 \\end{pmatrix}\\)",
+        "Nilai \\(x\\) yang memenuhi persamaan \\(\\begin{vmatrix} x & 3 \\\\ 4 & 2 \\end{vmatrix} = 6\\)",
+        "Nilai \\(a + b\\) jika \\(\\begin{pmatrix} a & 5 \\\\ 2 & b \\end{pmatrix} = \\begin{pmatrix} 3 & 5 \\\\ 2 & 4 \\end{pmatrix}\\)",
+        "Jumlah elemen diagonal utama matriks \\(\\begin{pmatrix} -1 & 4 \\\\ 2 & 3 \\end{pmatrix}\\)"
+      ],
+      right: [
+        { code: "A", val: "\\(2\\)" },
+        { code: "B", val: "\\(4\\)" },
+        { code: "C", val: "\\(6\\)" },
+        { code: "D", val: "\\(7\\)" },
+        { code: "E", val: "\\(9\\)" }
+      ]
+    },
+    {
+      no: 40, topik: "Transformasi Geometri",
+      q: "Diketahui titik \\(B(-4, 1)\\). Pasangkan setiap jenis transformasi pada kolom kiri dengan koordinat bayangan titik \\(B\\) yang tepat pada kolom kanan!",
+      left: [
+        "Translasi oleh vektor \\(T\\begin{pmatrix} 2 \\\\ -5 \\end{pmatrix}\\)",
+        "Pencerminan terhadap garis \\(y = -x\\)",
+        "Rotasi sejauh \\(180^\\circ\\) terhadap pusat \\((0, 0)\\)",
+        "Dilatasi dengan pusat \\((0, 0)\\) dan faktor skala \\(k = -2\\)"
+      ],
+      right: [
+        { code: "A", val: "\\((4, -1)\\)" },
+        { code: "B", val: "\\((-2, -4)\\)" },
+        { code: "C", val: "\\((-1, 4)\\)" },
+        { code: "D", val: "\\((8, -2)\\)" },
+        { code: "E", val: "\\((-8, 2)\\)" }
+      ]
+    }
+  ]
+};
+
+function renderPacket(packet, containerId) {
+  const container = document.getElementById(containerId);
+  let html = '';
+
+  // BAGIAN I: PILIHAN GANDA
+  html += `
+    <div class="part-banner">
+      <h3>BAGIAN I. PILIHAN GANDA (Nomor 1 – 24)</h3>
+      <p>Pilihlah satu jawaban yang paling tepat (A, B, C, D, atau E)!</p>
+    </div>
+  `;
+  packet.pg.forEach(item => {
+    const isLong = item.opts.some(o => o.length > 42 || o.includes('pmatrix'));
+    const optsHtml = item.opts.map((opt, idx) => `
+      <li class="option-item">
+        <span class="opt-letter">${letters[idx]}.</span>
+        <span>${opt}</span>
+      </li>
+    `).join('');
+
+    html += `
+      <div class="question-card">
+        <div class="q-title">
+          <span class="q-num">${item.no}</span>
+          <div class="q-text">
+            <div class="topic-tag">${item.topik}</div>
+            <div>${item.q}</div>
+          </div>
+        </div>
+        <ul class="options-list ${isLong ? 'vertical' : ''}">${optsHtml}</ul>
+      </div>
+    `;
+  });
+
+  // BAGIAN II: BENAR / SALAH
+  html += `
+    <div class="part-banner">
+      <h3>BAGIAN II. BENAR ATAU SALAH (Nomor 25 – 34)</h3>
+      <p>Tentukan apakah pernyataan berikut bernilai <strong>Benar</strong> atau <strong>Salah</strong>!</p>
+    </div>
+  `;
+  packet.tf.forEach(item => {
+    html += `
+      <div class="question-card">
+        <div class="q-title">
+          <span class="q-num">${item.no}</span>
+          <div class="q-text">
+            <div class="topic-tag">${item.topik}</div>
+            <div>${item.q}</div>
+          </div>
+        </div>
+        <div class="tf-options">
+          <span class="tf-box">&#9711; Benar</span>
+          <span class="tf-box">&#9711; Salah</span>
+        </div>
+      </div>
+    `;
+  });
+
+  // BAGIAN III: PILIHAN GANDA KOMPLEKS (CHECKBOX)
+  html += `
+    <div class="part-banner">
+      <h3>BAGIAN III. PILIHAN GANDA KOMPLEKS / CHECKBOX (Nomor 35 – 37)</h3>
+      <p>Pilihlah semua pernyataan yang benar dengan memberi tanda centang (&#10003;) pada kotak yang tersedia!</p>
+    </div>
+  `;
+  packet.cb.forEach(item => {
+    const cbHtml = item.opts.map((opt, idx) => `
+      <li class="cb-item">
+        <span class="cb-square"></span>
+        <span><strong>(${letters[idx]})</strong> ${opt}</span>
+      </li>
+    `).join('');
+
+    html += `
+      <div class="question-card">
+        <div class="q-title">
+          <span class="q-num">${item.no}</span>
+          <div class="q-text">
+            <div class="topic-tag">${item.topik}</div>
+            <div>${item.q}</div>
+          </div>
+        </div>
+        <ul class="cb-list">${cbHtml}</ul>
+      </div>
+    `;
+  });
+
+  // BAGIAN IV: MENJODOHKAN
+  html += `
+    <div class="part-banner">
+      <h3>BAGIAN IV. MENJODOHKAN (Nomor 38 – 40)</h3>
+      <p>Pasangkan setiap premis pada kolom kiri dengan pasangan jawaban yang tepat pada kolom kanan!</p>
+    </div>
+  `;
+  packet.match.forEach(item => {
+    const maxRows = Math.max(item.left.length, item.right.length);
+    let rowsHtml = '';
+    for (let i = 0; i < maxRows; i++) {
+      const leftText = item.left[i] ? `<strong>${i + 1}.</strong> ${item.left[i]}` : '';
+      const slotText = item.left[i] ? `( ...... )` : '';
+      const rightText = item.right[i] ? `<strong>${item.right[i].code}.</strong> ${item.right[i].val}` : '';
+      rowsHtml += `
+        <tr>
+          <td>${leftText}</td>
+          <td class="match-ans-slot">${slotText}</td>
+          <td>${rightText}</td>
+        </tr>
+      `;
+    }
+
+    html += `
+      <div class="question-card">
+        <div class="q-title">
+          <span class="q-num">${item.no}</span>
+          <div class="q-text">
+            <div class="topic-tag">${item.topik}</div>
+            <div>${item.q}</div>
+          </div>
+        </div>
+        <table class="match-table">
+          <thead>
+            <tr>
+              <th style="width:52%">Premis / Pernyataan</th>
+              <th style="width:14%">Pasangan</th>
+              <th style="width:34%">Pilihan Jawaban</th>
+            </tr>
+          </thead>
+          <tbody>${rowsHtml}</tbody>
+        </table>
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
+}
+
+renderPacket(dataTipeB, 'body-tipeB');
+</script>
+</body>
+</html>
